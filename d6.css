@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background-color: #f8f7ff;
+  display: flex;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  color: rgba(68, 61, 61, 0.4);
+  font-weight: 600;
+}
+.phone {
+  margin-top: 50px;
+  background-color: white;
+  width: 350px;
+  height: 618px;
+  border-radius: 40px;
+  box-shadow: inset -6px -6px 15px rgba(145, 160, 180, 0.45),
+    30px 30px 40px rgba(118, 146, 180, 0.18);
+  overflow: hidden;
+  padding: 20px;
+}
+.screen {
+  width: 100%;
+  height: 100%;
+  background: #f8f8f8;
+  border-radius: 25px;
+  padding: 0px 20px;
+  padding-top: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header__title {
+  color: #020202;
+}
+
+.main {
+  margin-top: 25px;
+}
+.top .top__header {
+  display: flex;
+  justify-content: space-between;
+}
+.top .top__header .title {
+  color: #020202;
+}
+.top .top__header .view-all {
+  color: #eb818e;
+}
+
+.top__recipe-images {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.recipe-image {
+  background: url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 130px;
+  height: 80px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.recipe-image:not(:nth-child(2n)) {
+  margin-right: 10px;
+}
+.recipe-image:first-child {
+  margin-bottom: 10px;
+}
+.recipe-image span {
+  color: white;
+}
+
+/* bot */
+.main__bot {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.bot .bot__header {
+  color: #020202;
+}
+.category__list .category {
+  box-shadow: 0 100px 100px rgba(0, 0, 0, 0), 0 15px 12px rgba(0, 0, 0, 0.22);
+  margin-top: 10px;
+  height: 50px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.category__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.category__column .recipe__count {
+  font-size: 10px;
+}
+.category__title {
+  color: #020202;
+  margin-bottom: 5px;
+}
+.category .category__column i {
+  color: red;
+  font-size: 16px;
+}
+
+.tab-bar {
+  margin-top: 20px;
+  margin: 0 -20px;
+  background-color: white;
+  padding: 15px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.tab-bar__list {
+  display: flex;
+  justify-content: space-around;
+}
+.tab-bar__list .tab-bar__tab {
+  font-size: 16px;
+}
+.tab-bar__list .tab-bar__tab:nth-child(2) {
+  color: red;
+}
